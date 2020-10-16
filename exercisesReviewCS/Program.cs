@@ -10,6 +10,13 @@ namespace exercisesReviewCS
     {
         static void Main(string[] args)
         {
+            string[] nombres = { "Alberto", "Andrés", "Antonio" };
+            foreach (string nombre in nombres)
+            {
+                Console.WriteLine("Hello {0}", nombre);
+            }
+            Console.WriteLine();
+            Console.ReadKey();
         }
     }
 }
