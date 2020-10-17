@@ -16,7 +16,17 @@ namespace exercisesReviewCS
             FirstName = firstName;
             LastName = lastName;
         }
+
+        public PersonModel()
+        {
+        }
+
         // more properties.
+
+        public override string ToString()
+        {
+            return " Hello " + FirstName + " " + LastName;
+        }
 
     }
 }
