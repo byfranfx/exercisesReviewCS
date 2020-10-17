@@ -13,17 +13,25 @@ namespace exercisesReviewCS
             string[] nombres = { "John", "Mary", "Sue", "Greg", "Yolanda", "Jose", "Bill" };
             foreach (string nombre in nombres)
             {
-                Console.WriteLine("Hello {0}", nombre);
+                Console.WriteLine(" Hello {0}", nombre);
             }
             Console.WriteLine();
-            Console.ReadKey();
+            //Console.ReadKey();
 
             // class PersonModel
+            PersonModel person1 = new PersonModel("Tim", "Corey");
+            PersonModel person2 = new PersonModel("Bill", "McCoy");
+            PersonModel person3 = new PersonModel("Mary", "Jones");
+            PersonModel person4 = new PersonModel("Sue", "Smith");
+            Console.WriteLine(" Hello {0} {1}", person1.FirstName, person1.LastName);
+            Console.WriteLine(" Hello {0} {1}", person2.FirstName, person2.LastName);
+            Console.WriteLine(" Hello {0} {1}", person3.FirstName, person3.LastName);
+            Console.WriteLine(" Hello {0} {1}", person4.FirstName, person3.LastName);
 
-            PersonModel person = new PersonModel("wdc", "wdc");
-            Console.WriteLine(" {0} {1}", person.FirstName, person.LastName);
+            // Keep the console open in debug mode.
+            //Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
 
-            
 
         }
     }
