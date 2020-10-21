@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercisesReviewCS", "exercisesReviewCS\exercisesReviewCS.csproj", "{F6C5C8EB-D39C-4AFF-AC74-660A0049C44F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_exercisesReviewCS", "exercisesReviewCS\01_exercisesReviewCS.csproj", "{F6C5C8EB-D39C-4AFF-AC74-660A0049C44F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_ListModificationChallenge", "02_ListModificationChallenge\02_ListModificationChallenge.csproj", "{B7405076-DB5C-4822-980E-4EFEE638134D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F6C5C8EB-D39C-4AFF-AC74-660A0049C44F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6C5C8EB-D39C-4AFF-AC74-660A0049C44F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6C5C8EB-D39C-4AFF-AC74-660A0049C44F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7405076-DB5C-4822-980E-4EFEE638134D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7405076-DB5C-4822-980E-4EFEE638134D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7405076-DB5C-4822-980E-4EFEE638134D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7405076-DB5C-4822-980E-4EFEE638134D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
