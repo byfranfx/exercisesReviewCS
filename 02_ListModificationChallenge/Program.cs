@@ -129,7 +129,8 @@ namespace _02_ListModificationChallenge
 
             // TODO: Add a record to the end of the incoming list and return a new list that includes newPerson
             // HACK: The following line is incorrect but is used to get this to compile
-            output = people;
+            output = people.ToList();
+            output.Add(newPerson);
 
             return output;
         }
@@ -141,7 +142,8 @@ namespace _02_ListModificationChallenge
 
             // TODO: Add a record to the beginning of the incoming list and return a new list that includes newPerson
             // HACK: The following line is incorrect but is used to get this to compile
-            output = people;
+            output = people.ToList();
+            output.Insert(0, newPerson);
 
             return output;
         }
@@ -153,7 +155,17 @@ namespace _02_ListModificationChallenge
 
             // TODO: Add a record after Paul Jones in the incoming list and return a new list that includes newPerson
             // HACK: The following line is incorrect but is used to get this to compile
-            output = people;
+            output = people.ToList();
+            int positionToInsert = 0;
+
+            for (int i = 0; i < output.Count; i++)
+            {
+                if (output[i].FirstName == "Paul" && output[i].LastName == "Jones")
+                {
+                    positionToInsert = i + 1;
+                }
+            }
+            output.Insert(positionToInsert, newPerson);
 
             return output;
         }
@@ -164,7 +176,8 @@ namespace _02_ListModificationChallenge
 
             // TODO: Sort the incoming list values by fullname (ascending) and return a new list
             // HACK: The following line is incorrect but is used to get this to compile
-            output = people;
+            output = people.ToList().OrderBy(x => x.FullName).ToList();
+
 
             return output;
         }
@@ -176,6 +189,8 @@ namespace _02_ListModificationChallenge
             PersonModel newPerson = new PersonModel { FirstName = "Greg", LastName = "Brown" };
 
             // TODO: Add a record to the end of the incoming list
+            people.Add(newPerson);
+
 
         }
 
@@ -184,7 +199,7 @@ namespace _02_ListModificationChallenge
             PersonModel newPerson = new PersonModel { FirstName = "Greg", LastName = "Brown" };
 
             // TODO: Add a record to the beginning of the incoming list
-
+            people.Insert(0, newPerson);
         }
 
         private static void InsertRecordInTheMiddleOfTheList(List<PersonModel> people)
@@ -192,12 +207,22 @@ namespace _02_ListModificationChallenge
             PersonModel newPerson = new PersonModel { FirstName = "Greg", LastName = "Brown" };
 
             // TODO: Add a record after Paul Jones in the incoming list
+            int positionToInsert = 0;
 
+            for (int i = 0; i < people.Count; i++)
+            {
+                if (people[i].FirstName == "Paul" && people[i].LastName == "Jones")
+                {
+                    positionToInsert = i + 1;
+                }
+            }
+            people.Insert(positionToInsert, newPerson);
         }
 
         private static void SortAList(List<PersonModel> people)
         {
             // TODO: Sort the incoming list values by fullname (ascending)
+            people.Sort((x, y) => string.Compare(x.FullName, y.FullName));
         }
         #endregion
 
