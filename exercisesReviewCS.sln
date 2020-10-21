@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_exercisesReviewCS", "exe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_ListModificationChallenge", "02_ListModificationChallenge\02_ListModificationChallenge.csproj", "{B7405076-DB5C-4822-980E-4EFEE638134D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_DateTimeChallenge", "03_DateTimeChallenge\03_DateTimeChallenge.csproj", "{EBB0753E-2CAE-42F2-A0F8-18B636E687FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B7405076-DB5C-4822-980E-4EFEE638134D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7405076-DB5C-4822-980E-4EFEE638134D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7405076-DB5C-4822-980E-4EFEE638134D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB0753E-2CAE-42F2-A0F8-18B636E687FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB0753E-2CAE-42F2-A0F8-18B636E687FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB0753E-2CAE-42F2-A0F8-18B636E687FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB0753E-2CAE-42F2-A0F8-18B636E687FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
