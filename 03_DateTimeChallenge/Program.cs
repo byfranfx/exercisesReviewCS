@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,9 @@ namespace _03_DateTimeChallenge
             Console.Write("Give me a time: ");
             string previousTimeString = Console.ReadLine();
 
-            DateTime previousTime = DateTime.ParseExact(previousTimeString, "h:mm tt", null);
+            DateTime previousTime = DateTime.ParseExact(previousTimeString, "h:mm tt", CultureInfo.InvariantCulture);
+            //new CultureInfo("en-US")
+            //CultureInfo.InvariantCulture
 
             TimeSpan fromPreviousTime = DateTime.Now.Subtract(previousTime);
 
