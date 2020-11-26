@@ -70,7 +70,7 @@ namespace _05_TestFilesChallenge
                     FirstName = columns[firstNameOrder],
                     LastName = columns[lastNameOrder],
                     Age = int.Parse(columns[ageOrder]),
-                    //IsAlive = bool.Parse(columns[isAliveOrder])
+                    IsAlive = bool.Parse(columns[isAliveOrder])
                 });
 
             }
@@ -102,18 +102,64 @@ namespace _05_TestFilesChallenge
         private void saveListButton_Click(object sender, EventArgs e)
         {
             List<string> lines = new List<string>();
-            lines.Add("FirstName, Lastname, Age, IsAlive");
+            string line = "";
+
+            for(int i = 0; i < 4; i++)
+            {
+                if(firstNameOrder == 1)
+                {
+                    line += "FirstName";
+                }
+                else if (lastNameOrder == 1)
+                {
+                    line += "LastName";
+                }
+                else if (ageOrder == 1)
+                {
+                    line += "Age";
+                }
+                else if (isAliveOrder == 1)
+                {
+                    line += "IsAlive";
+                }
+                line += ",";
+            }
+
+            line = line.Substring(0, line.Length - 1);
+            lines.Add(line);
 
             foreach(UserModel user in users)
             {
                 int isAliveValue = 0;
+                line = "";
+
                 if(user.IsAlive == true)
                 {
                     isAliveValue = 1;
                 }
 
+                for(int i = 0; i < 4; i++)
+                {
+                    if(firstNameOrder == i) {
+                        line += user.FirstName;
+                    }
+                    else if (lastNameOrder == i)
+                    {
+                        line += user.LastName;
+                    }
+                    else if (ageOrder == i)
+                    {
+                        line += user.Age;
+                    }
+                    else if (isAliveOrder == i)
+                    {
+                        line += user.IsAlive;
+                    }
+                }
+
                 lines.Add($"{ user.FirstName }, { user.LastName },{ user.Age },{ user.IsAlive }");
             }
+
             File.WriteAllLines("StandardDataSet.csv", lines);
             MessageBox.Show("Save Completed");
         }
