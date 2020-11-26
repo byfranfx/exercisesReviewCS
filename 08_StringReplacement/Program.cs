@@ -44,7 +44,7 @@ namespace _08_StringReplacement
                 Console.Write($"Please give me the value for { result }: ");
                 bonusText = bonusText.Replace("{" + result + "}", Console.ReadLine());
             }
-            File.WriteAllText(@"C:\Users\byfra\Documents\CFGS2\SPDVI\1. avaluació\1. Topic\Visual Studio\exercisesReviewCS\exercisesReviewCS\08_StringReplacement\bin\Debug\arxiu.txt);
+            File.WriteAllText(@"C:\Users\byfra\Documents\CFGS2\SPDVI\1. avaluació\1. Topic\Visual Studio\exercisesReviewCS\exercisesReviewCS\08_StringReplacement\bin\Debug\arxiu.txt", bonusText);
         }
     }
 }
