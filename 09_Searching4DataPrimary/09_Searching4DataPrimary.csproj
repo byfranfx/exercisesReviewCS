@@ -7,7 +7,7 @@
     <ProjectGuid>{E05B1F3A-C1E2-4690-9C7B-C31C1771E3E8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>_09_Searching4DataPrimary</RootNamespace>
-    <AssemblyName>_09_Searching4DataPrimary</AssemblyName>
+    <AssemblyName>09_Searching4DataPrimary</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

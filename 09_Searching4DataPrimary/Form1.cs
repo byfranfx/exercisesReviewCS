@@ -50,5 +50,14 @@ namespace _09_Searching4DataPrimary
                 }
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if(textBox1.Text.Length < 2)
+            {
+                return;
+            }
+            button2_Click(sender, e);
+        }
     }
 }
