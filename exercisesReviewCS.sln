@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_DataAccess", "04_DataAcc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_TestFilesChallenge", "05_TestFilesChallenge\05_TestFilesChallenge.csproj", "{6279355A-6588-4F86-B13D-E5D4FFF10EE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_WinFormsToDoList", "WinFormsToDoList\06_WinFormsToDoList.csproj", "{0A436755-0965-4271-848B-523127BD4ED0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6279355A-6588-4F86-B13D-E5D4FFF10EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6279355A-6588-4F86-B13D-E5D4FFF10EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6279355A-6588-4F86-B13D-E5D4FFF10EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A436755-0965-4271-848B-523127BD4ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A436755-0965-4271-848B-523127BD4ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A436755-0965-4271-848B-523127BD4ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A436755-0965-4271-848B-523127BD4ED0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
