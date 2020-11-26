@@ -63,54 +63,6 @@ namespace _03_DateTimeChallenge
 
             Console.ReadLine();
 
-
-
-
-
-
-
-
-
-
-
-            /*Console.Write("Give me a date: ");
-            string previousDateString = Console.ReadLine();
-
-            Console.Write("what date format do you want to use: ");
-            string dateFormat = Console.ReadLine();
-
-            if(dateFormat.Length < 1)
-            {
-                dateFormat = "M/d/yy";
-            }
-            
-            DateTime previousDate = DateTime.ParseExact(previousDateString, "M/d/yy/", null);
-            
-            TimeSpan fromPreviousDate = DateTime.Now.Subtract(previousDate);
-            
-            Console.WriteLine($"IT has been { fromPreviousDate.Days} since {previousDateString}");
-
-            /*Console.Write("Give me a time: ");
-            string previousTimeString = Console.ReadLine();
-
-            Console.Write("What time format do you want to use: ");
-            string timeFormat = Console.ReadLine();
-                
-            if (timeFormat.Length < 1)
-            {
-                timeFormat = "h:m tt";
-            }
-
-            DateTime previousTime = DateTime.ParseExact(previousTimeString, timeFormat, null);
-
-            TimeSpan fromPreviousTime = DateTime.Now.Subtract(previousTime);
-
-            if (fromPreviousTime.Ticks < 0)
-            {
-                fromPreviousTime = fromPreviousTime.Add(TimeSpan.FromHours(24));
-            }
-
-            Console.ReadLine();*/
         }
     }
 }

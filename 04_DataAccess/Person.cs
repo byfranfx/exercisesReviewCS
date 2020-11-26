@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace _04_DataAccess
 {
-    class UserModel
+    class Person
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public int Age { get; set; }
-        public double IsAlive { get; set; }
+        public string Url { get; set; }
     }
+
 }
